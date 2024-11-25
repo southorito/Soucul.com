@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SouCul Shop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">SouCul Shop</div>
+    <nav>
+      <a href="boracay.html">Boracay</a>
+      <a href="launion.html">La Union</a>
+      <a href="intramuros.html">Intramuros</a>
+      <a href="tagaytay.html">Tagaytay</a>
+      <a href="vigan.html">Vigan City</a>
+      <a href="baguio.html">Baguio</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="hero-slider">
+      <div class="slide">
+        <img src="baguio.jpg" alt="Baguio">
+        <h2>Baguio - The Creative City</h2>
+      </div>
+      <div class="slide">
+        <img src="vigan.jpg" alt="Vigan City">
+        <h2>Vigan City</h2>
+      </div>
+      <div class="slide">
+        <img src="tagaytay.jpg" alt="Tagaytay">
+        <h2>Tagaytay</h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Categories -->
+  <section class="featured-categories">
+    <h2>Featured Categories</h2>
+    <div class="categories">
+      <a href="#" onclick="showTouristSpots('clothing')">Clothing</a>
+      <a href="#" onclick="showTouristSpots('accessories')">Accessories</a>
+      <a href="#" onclick="showTouristSpots('keychains')">Keychains</a>
+      <a href="#" onclick="showTouristSpots('local_food')">Local Foods</a>
+      <a href="#" onclick="showTouristSpots('home_decor')">Home Decor</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>About SouCul Shop</h2>
+    <p>Discover the unique culture of the Philippines through authentic, locally crafted items from various tourist destinations.</p>
+    <a href="#learn-more" class="btn">Learn More</a>
+  </section>
+
+  <script>
+    // JavaScript function to simulate redirection to categories
+    function showTouristSpots(category) {
+      const touristSpots = {
+        clothing: 'boracay.html',
+        accessories: 'launion.html',
+        keychains: 'vigan.html',
+        local_food: 'intramuros.html',
+        home_decor: 'tagaytay.html'
+      };
+      window.location.href = touristSpots[category];
+    }
+  </script>
+</body>
+</html>
